@@ -62,8 +62,8 @@ class VehicleServiceImplTest {
     void fetchAllRecord() {
         List<Vehicle> vehicles = this.vehicleService.fetchAllRecord();
         assertFalse(vehicles.isEmpty());
-        assertEquals(vehicles.size(), 1);
-        assertEquals(VEHICLE_NAME, vehicles.get(0).getName());
+        assertEquals(vehicles.size(), 5); // 4 records added when starting
+        assertEquals(VEHICLE_NAME, vehicles.get(4).getName());
     }
 
     @Test
@@ -82,5 +82,5 @@ class VehicleServiceImplTest {
         assertTrue(msgError.contains("Vehicle name cannot be null"));
     }
 
- 
+
 }
