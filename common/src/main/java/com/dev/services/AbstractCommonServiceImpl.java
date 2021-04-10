@@ -1,8 +1,8 @@
 package com.dev.services;
 
-import com.jean.aime.core.GeneratorUtils;
-import com.jean.aime.domain.AbstractEntity;
-import com.jean.aime.exeptions.AppResponseEntityException;
+import com.dev.core.GeneratorUtils;
+import com.dev.domain.AbstractEntity;
+import com.dev.exeptions.AppResponseEntityException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

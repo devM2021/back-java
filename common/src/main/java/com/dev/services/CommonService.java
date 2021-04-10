@@ -1,6 +1,6 @@
 package com.dev.services;
 
-import com.jean.aime.domain.AbstractEntity;
+import com.dev.domain.AbstractEntity;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
@@ -17,7 +17,7 @@ public interface CommonService<E extends AbstractEntity<ID>, ID extends Serializ
      *
      * @param entity object to save
      * @return the object saved
-     * @throws com.jean.aime.exeptions.AppResponseEntityException an exception is thrown if something wrong goes here
+     * @throws com.dev.exeptions.AppResponseEntityException an exception is thrown if something wrong goes here
      */
     E createOrUpdate(E entity);
 
