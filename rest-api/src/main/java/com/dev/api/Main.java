@@ -32,10 +32,6 @@ public class Main {
 
     private final UserRoleService userDetailsService;
 
-    @Value("${dhrs.info.host}")
-    private String host;
-
-
     public Main(SecurityService securityService, AuthenticationManager authenticationManager, JwtTokenUtil jwtTokenUtil, UserRoleService userDetailsService) {
         this.securityService = securityService;
         this.authenticationManager = authenticationManager;
